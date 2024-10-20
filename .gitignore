@@ -1,0 +1,16 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar logs
+*.log
+
+# Ignorar entorno de desarrollo
+.env
+
+# Ignorar archivos de compilación
+dist/
+build/
+
+# Ignorar archivos del editor
+.vscode/
+.idea/
