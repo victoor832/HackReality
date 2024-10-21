@@ -1,18 +1,18 @@
 ---
-/* interface Props {
+interface Props {
   color?: string | undefined;
 }
-import colors from '../config/colors.json';
+import colors from './config/colors.json';
 
 if (Astro.props.color === undefined) {
   Astro.props.color =
     colors[Math.floor(Math.random() * colors.length)];
 }
 
-const { color } = Astro.props; */
+const { color } = Astro.props;
 ---
 
-<style>
+<style >
   div.brutal-card-red {
     background-color: var(--color);
     border-radius: 0.5rem;

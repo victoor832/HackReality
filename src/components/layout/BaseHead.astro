@@ -2,11 +2,11 @@
 import LocalFont from '../generic/LocalFont.astro';
 import { ViewTransitions } from 'astro:transitions';
 
-interface Props {
+/* interface Props {
   title: string;
   description: string;
-/*   ogImage?: URL; */
-}
+  ogImage?: URL;
+} */
 
 /* const canonicalURL = new URL(Astro.url.pathname, Astro.site); */
 
@@ -14,23 +14,23 @@ interface Props {
   Astro.props.ogImage = new URL('/v1/generate/og/default.png', Astro.url);
 } */
 
-const { title, description } = Astro.props;
+/* const { title, description } = Astro.props; */
 ---
 
 <head>
   <LocalFont />
   <meta charset='utf-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <meta name='generator' content={Astro.generator} />
-
-  <link
+<!--   <meta name='generator' content={Astro.generator} />
+ -->
+<!--   <link
     rel='alternate'
     href='#'
     type='application/rss+xml'
-  />
+  /> -->
 
-  <meta name='title' content={`HackReality`} />
-  <meta name='description' content={description} />
+<!--   <meta name='title' content={`HackReality`} />
+  <meta name='description' content={description} /> -->
 
 <!-- <meta property='og:type' content='website' />
   <meta property='og:url' content={canonicalURL} />
